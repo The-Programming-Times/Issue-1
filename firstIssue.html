@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            
+        <title>Programming Times | Issue 1 |</title>
+        <style>
+            body {
+                padding: 30px;
+                background: linear-gradient(rgb(38, 74, 11, 2), rgb(191, 191, 191)) fixed;
+                color: rgb(40, 135, 37);
+                font-family: 'Arial';
+                border: 5px solid rgb(38, 74, 11, 2));
+            }
+            h1 {
+                text-align: center;
+                border-bottom: 1px black solid;
+                font-size: 4.0em;
+                transition: all 0.5s;
+            }
+            h1:hover{
+                text-shadow: 0px 5px 5px rgba(38, 74, 11, 2);
+            }
+            h2 {
+                color: rgb(245, 245, 245);
+                font-family: Montserrat;
+                text-align: center;
+                font-size: 25px;
+                background-color: rgba(38, 74, 11, 2);
+                padding: 10px;
+                transition: all 0.3s;
+            }
+            h2:hover {
+                box-shadow:0px 10px 20px rgba(255, 255, 255, 0.3);
+            }
+            h3 {
+                width: 80%;
+                font-weight: 100;
+                border-bottom: 1px rgb(34, 20, 224) solid;
+            }
+            img {
+                width: 80px;
+                transition: all 0.5s;
+            }
+            img:hover {
+                -webkit-transform: rotate(180deg);
+            }
+            .article {
+                margin-bottom: 20px;
+                border: 1px black solid;
+                padding: 20px;
+            }
+            .sponsored {
+                width:80vw;
+                height:80vh;
+                position:fixed;
+                left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+                background:white;
+                box-shadow:0 4px 5px 0 rgba(21, 31, 143,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+                padding:8px;
+                display:none;
+            }
+            .sponsored h1{
+                margin-top:8px;
+            }
+            .sponsored-container{
+                display:none;
+                position:fixed;
+                top:0;
+                left:0;
+                width:100vw;
+                height:100vh;
+                background:rgba(32, 41, 212,0.15);
+            }
+        </style>
+    </head>
+    <body>
+<h1> The Programming Times </h1>  
+<!--For more articles, coy and paste from here...-->
+
+
+<div class = "article">
+   
+    
+    <h2>Hot Games</h2>
+    
+
+ 
+    
+    <p>
+    
+    
+   The Hot List has been great lately! Check out some of these cool games:
+    <a href ="https://www.khanacademy.org/computer-programming/memory-card-game/5648647542833152" > Memory Card Game by KWC!
+     
+     
+    </a>
+  This game took 2 1/2 years to complete! Check it out and vote it up! 
+ <p>
+ Also check out DATA TROUBLE by Anakin Skywalker: 
+ <a href= "https://www.khanacademy.org/computer-programming/data-trouble-a-star-wars-story/5645515303714816" > DATA TROUBLE!
+     
+     
+    </a>
+       
+       
+   </p>
+    
+
+ <h2>Interviews!</h2>
+ 
+ 
+.
+ <p>   
+ 
+    
+</p>    
+    
+
+
+    
+    
+</div>
+
+
+
+<div class = "article">
+    
+    
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+<!--...to here-->
+<h3>By Bryce Steuer; Original styling by DragonFly from News Nook</h3>
+<div class = "sponsored-container">
+    <div class = "sponsored">
+        <b style = "padding:8px;cursor:pointer; font-family:sans-serif; float:right">X</b>
+        <h1>Written by Bryce S.</h1>
+        <p>
+      
+      <a href ="https://www.khanacademy.org/computer-programming/sub-to-bryce-s/5052013922516992" > Sub to Bryce S!</a>
+     Sub here </p>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+var clicked = false;
+    $(window).scroll(function(){
+        if(!clicked){
+            $(".sponsored-container").fadeIn("fast")
+            $(".sponsored").fadeIn("slow")
+            document.body.style.overflowY = "hidden"
+            document.body.querySelector(".sponsored")
+        }
+    })
+    $(".sponsored b").click(function(){
+        clicked = true;
+        $(".sponsored-container").fadeOut("fast");
+        document.body.style.overflowY = "auto"
+    });
+</script>
+  </div>
+    </body>
+</html>
+
